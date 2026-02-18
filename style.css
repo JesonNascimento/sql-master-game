@@ -1,0 +1,67 @@
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        button.option {
+            display: block;
+            width: 90%;
+            margin: 8px auto;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background: #e3e3e3;
+        }
+
+        button.option:hover {
+            background: #cfcfcf;
+        }
+
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+
+        .wrong {
+            color: red;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+            width: 70%;
+        }
+
+        .certificate-box {
+            border: 5px solid #2a5298;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            margin-top: 40px;
+        }
+   
