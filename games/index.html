@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL Master Game 🎓</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <h1>🎓 SQL Master Game</h1>
+
+    <div class="container">
+
+        <!-- SETUP -->
+        <div id="setup">
+            <h3>Nome da Instituição:</h3>
+            <input id="institution" placeholder="Ex: Grau Técnico">
+
+            <h3>Nome do Aluno:</h3>
+            <input id="studentName" placeholder="Ex: João Silva">
+
+            <br><br>
+            <button onclick="startGame()">Iniciar Curso</button>
+        </div>
+
+        <!-- GAME -->
+        <div id="game" class="hidden">
+            <h2 id="phaseTitle"></h2>
+            <p id="question"></p>
+            <div id="options"></div>
+            <p id="feedback"></p>
+            <p>Fase <span id="phaseNumber"></span> / 15</p>
+        </div>
+
+        <!-- CERTIFICADO -->
+        <div id="certificate" class="hidden">
+
+            <div class="certificate-box">
+
+                <img src="grautecnico.png" class="logo">
+
+                <h2>🏆 CERTIFICADO DE CONCLUSÃO</h2>
+
+                <p id="certText"></p>
+
+                <p><strong>Professor Ministrante:</strong> Jeff Nascimento</p>
+
+                <div class="signature">
+                    _____________________________<br>
+                    Aluno (a)
+                </div>
+
+                <p style="margin-top:20px;">
+                    <strong>Número do Certificado:</strong>
+                    <span id="certNumber"></span>
+                </p>
+
+            </div>
+
+            <h3>🔐 Validar Certificado</h3>
+            <input id="validateInput" placeholder="Digite o número do certificado">
+            <button onclick="validateCert()">Validar</button>
+            <p id="validationResult"></p>
+
+        </div>
+
+    </div>
+<script src="type.js"></script>
+
+</body>
+</html>
